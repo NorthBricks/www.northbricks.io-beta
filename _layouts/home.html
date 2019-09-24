@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+<body>
+
+<section class="__discover-banner">
+  <div class="__discover-banner-text">
+    <h1>{{ page.bannerTitle }}</h1>
+    <p>{{ page.bannerText }}</p>
+    <a href="/apis" class="__discover-banner-link">Get started</a>
+    <br>
+    <br>
+  </div>
+</section>
+
+{%- include header.html -%}
+
+<main class="content">
+
+  {{ content }}
+
+</main>
+
+</body>
+</html>

@@ -88,3 +88,42 @@
     outline: 0;
     white-space: nowrap;
 }
+
+/**
+ * Start page
+ */
+a.__discover-banner-link {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.__discover {
+    &-banner {
+        width: 100%;
+        height: 30vh;
+        padding-top: 80px;
+        background: linear-gradient(45deg,rgb(40, 40, 70), #00A4EE),center top no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+    &-banner-text {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        right: 0;
+        height: calc(50% - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
