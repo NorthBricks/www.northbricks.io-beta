@@ -113,6 +113,7 @@ a.__discover-banner-link {
         background: linear-gradient(45deg,rgb(40, 40, 70), #00A4EE),center top no-repeat;
         background-size: cover;
         color: #fff;
+        display: inline-table;
     }
     &-banner-text {
         position: absolute;
@@ -129,7 +130,17 @@ a.__discover-banner-link {
 }
 
 .__cards-container {
-    /* TODO */
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    @include media-query($on-laptop) {
+        display: block;
+    }
+}
+
+a.__card {
+    color: $text-color;
+    text-decoration: none;
 }
 
 .__card {
@@ -142,6 +153,10 @@ a.__discover-banner-link {
     &-container {
         padding: 2px 16px;
         text-align: center;
+        @include media-query($on-laptop) {
+            flex: 2;
+            text-align: left;
+        }
     }
     &-img {
         width: 100%;
@@ -150,10 +165,25 @@ a.__discover-banner-link {
         color: #ccc;
         text-align: center;
         padding: 10px 0;
+        @include media-query($on-laptop) {
+            flex: 1;
+        }
     }
     &--3-col {
-        width: 200px;
-        float: left;
-        margin: 0 10px;
+        // width: 300px;
+        // float: left;
+        // margin: 0 10px;
+        flex: 1;
+        padding: 16px;
+        margin: 10px;
+        max-width: 300px;
+        @include media-query($on-laptop) {
+            float: left;
+            width: 100%;
+            max-width: none;
+            margin: 10px 0;
+            display: flex;
+            padding: 10px 0;
+        }
     }
 }

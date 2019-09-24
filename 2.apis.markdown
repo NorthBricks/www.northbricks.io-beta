@@ -4,7 +4,7 @@ title: APIs
 permalink: /apis/
 ---
 
-Based on simple REST principles, the Northbricks API endpoints return JSON metadata about banks, bank accounts, and transactions.
+Based on simple REST principles, the Northbricks API endpoints return JSON data about banks, bank accounts, and transactions.
 
 ## Postman
 
