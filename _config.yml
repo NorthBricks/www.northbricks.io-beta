@@ -22,8 +22,8 @@ title: Northbricks API
 email: info@northbricks.com
 description: >- # this means to ignore newlines until "baseurl:"
   Open banking, PSD2, meet code. Powerful APIs, SDKs and widgets for simple and advanced applications.
-baseurl: "/www.northbricks.io-beta/"
-url: "https://northbricks.github.io/www.northbricks.io"
+baseurl: ""
+url: "https://beta.northbricks.io"
 twitter_username: Northbricks
 github_username: NorthBricks
 
