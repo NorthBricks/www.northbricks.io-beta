@@ -19,4 +19,4 @@ Get an access token with [Postman](https://www.getpostman.com/):
 10. Set *scope* to `read` (scopes are not fully implemented yet).  
 11. Set *Client Authentication* `Send as Basic Auth header`.  
 12. Click *Request token* and login with a user that you created with [https://api.northbricks.io/signup](https://api.northbricks.io/signup).  
-13. You can now start using the api. Try to make a `GET` request to [https://api.northbricks.io/api/v1/banks](https://api.northbricks.io/api/v1/banks) with the aquired token in a request header.
+13. You can now start using the api. Try to make a `GET` request to [https://api.northbricks.io/api/v1/me/banks](https://api.northbricks.io/api/v1/me/banks) with the aquired token in a request header. It should return an empty array of banks.
